@@ -5,9 +5,7 @@ permissions:
   pull-requests: write
 
 on:
-  schedule:
-    - cron: '0 21 * * *'
-
+  workflow_dispatch:
 jobs:
   stale:
     runs-on: ubuntu-latest
